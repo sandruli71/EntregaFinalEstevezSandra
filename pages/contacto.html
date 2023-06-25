@@ -59,43 +59,32 @@
       </div>
     </div>
   </header>
-    <h1>Contacto</h1>
-    <section>
-      <form action="">
-        <fieldset>
-          <legend>Contacto</legend>
-          <p>
-            Nos interesa conocerte y saber tú opinion sobre este espacio y
-            sugerencias, conocer que es lo que te gustaria que tengamos,
-            contenido que desearías incluir o cambios que harias. Recorda que tú
-            opinion es de gran interes para nosotros!
-          </p>
-          <div>
-            <label for="nombre">Tu Nombre:</label>
-            <input type="text" name="nombre" />
+  <main>
+    <div class="row mt-5 mb-5">
+      <div class="col-12 col-md-8 col-lg-8 text-left">
+        <h2 class="mt-5">Contacto</h2>
+        <p class="lead">Nos interesa conocerte y saber tù opinion al respecto, saber que es lo que te gustaria, contenido que desees ver o cambios que harias. Recorda que tù opinion es de gran interes!</p>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 mt-5">   
+        <form action="" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Nombre</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tú Nombre">
           </div>
-          <div>
-            <label for="mail">Tu Email:</label>
-            <input type="text" name="email" />
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tú email de contacto">
           </div>
-          <div>Acepta los terminos y condiciones</div>
-          <input type="checkbox" name="acepta" value="si" />
-          <div>
-            <label for="mensaje">Mensaje:</label>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ingresa el mensaje que nos quieras dejar"></textarea>
           </div>
-          <div>
-            <textarea
-              name="mensaje"
-              id="mensaje"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-          <input type="submit" value="Enviar" />
-          <input type="reset" value="Limpiar" />
-        </fieldset>
-      </form>
-    </section>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-primary">Limpiar</button>
+        </form>
+      </div>
+    </div>
+  </main>
 <!-- FOOTER -->
 <footer class="footer pt-0 bg-yellow">
   <div class="footer-sm text-black">
