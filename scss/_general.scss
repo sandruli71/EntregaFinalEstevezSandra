@@ -1,56 +1,3 @@
-.logo {
-  width: 100px;
-}
-
-h1 {
-  font-family: "Allerta Stencil", sans-serif;
-  text-align: center;
-}
-
-h2 {
-  font-family: "Allerta Stencil", sans-serif;
-  text-align: center;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
-.container {
-  width: 80%;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-img {
-  max-width: 100%;
-}
-img class {
-  width: 80px;
-  height: 80px;
-}
-
-.col {
-  width: 100%;
-}
-
-header {
-  font-family: "Allerta Stencil", sans-serif;
-  background-color: #fafb55;
-  padding: 0.5rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .nav_link {
   text-decoration: none;
   text-transform: uppercase;
@@ -89,7 +36,6 @@ header {
   box-shadow: 0 10px 30px black(0, 0, 0, 0.45);
   background-color: #fafb55;
 }
-
 .cards {
   margin: 2rem;
   max-width: 1000px;
@@ -108,7 +54,7 @@ main {
 
 .grid-cointained {
   font-display: grid;
-  grid-template-columns: repeat auto-fit, minmax 300px, 1fr;
+  grid-template-columns: repeat (auto-fit, minmax (300px, 1fr));
   grid-gap: 1rem;
   background-color: black;
 }
@@ -155,6 +101,7 @@ footer {
 }
 
 /*MEDIA QUERIES*/
+
 @media (min-width: 768px) {
   .container {
     width: 80%;
@@ -193,11 +140,13 @@ footer {
     font-weight: 400;
   }
 }
+
 @media (min-width: 1024px) {
   .display-2 {
     font-size: 4.5rem;
   }
 }
+
 section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -208,11 +157,10 @@ section {
   padding: 3rem;
   text-align: center;
   color: black;
-}
-.us__body p {
-  font-weight: 200;
-  align-items: center;
-  text-align: center;
-}
 
-/*# sourceMappingURL=style.css.map */
+  p {
+    font-weight: 200;
+    align-items: center;
+    text-align: center;
+  }
+}
