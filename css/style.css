@@ -92,20 +92,22 @@ img class {
   margin: 2rem;
   max-width: 1000px;
   padding: 2rem;
-  box-shadow: 0 10px 30px black(0, 0, 0, 0.45);
+  box-shadow: 0 100px 30px black(0, 0, 0, 0.45);
   background-color: #fafb55;
   color: black;
 }
 main {
-  background: black;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  background-color: #fafb55;
+  border: 10px solid black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .grid-cointained {
   font-display: grid;
   grid-template-columns: repeat (auto-fit, minmax (300px, 1fr));
   grid-gap: 1rem;
+  background-color: black;
 }
 
 .flex-cointained {
@@ -200,4 +202,16 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
+}
+
+.us__body {
+  padding: 3rem;
+  text-align: center;
+  color: black;
+}
+
+.us__body p {
+  font-weight: 200;
+  align-items: center;
+  text-align: center;
 }
