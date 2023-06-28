@@ -197,22 +197,3 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
 }
-
-.us__body {
-  padding: 3rem;
-  text-align: center;
-  color: black;
-}
-.us__body p {
-  font-weight: 200;
-  align-items: center;
-  text-align: center;
-}
-
-.body_style {
-  background-color: #fafb55;
-  color: rgb(0, 0, 0);
-  font-size: 14px;
-}
-
-/*# sourceMappingURL=style.css.map */
