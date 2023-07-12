@@ -8,26 +8,31 @@
   align-items: normal;
 }
 
-.nav {
+.navbar {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+.navbar .nav_list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+.navbar .nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   height: auto;
   position: relative;
 }
-.nav .nav_list {
-  display: flex;
-  margin: 0;
-  list-style: none;
-}
-.nav .nav_list .nav_item {
+.navbar .nav .nav_item {
   margin-left: 3rem;
 }
-.nav .nav_list .nav_item .nav_link.active {
+.navbar .nav .nav_item .nav_link.active {
   text-decoration: underline;
   font-weight: bolder;
 }
-.nav .nav_list .nav_item .nav_link {
+.navbar .nav .nav_item .nav_link {
   text-decoration: none;
   text-transform: uppercase;
   color: black;

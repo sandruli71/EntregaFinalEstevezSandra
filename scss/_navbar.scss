@@ -7,17 +7,22 @@
   align-items: normal;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: auto;
-  position: relative;
+.navbar {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
 
   .nav_list {
     display: flex;
     margin: 0;
     list-style: none;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    position: relative;
 
     .nav_item {
       margin-left: 3rem;
