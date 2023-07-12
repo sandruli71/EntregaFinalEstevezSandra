@@ -46,29 +46,38 @@
     <!-- Header -->
     <header>
       <!-- NAV BAR -->
-      <div class="container">
-        <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg__component">
+        <div class="container-fluid">
+         
           <a href="/" class="logo">
             <img src="img/logo soda stereo.png" alt="logo de la empresa" />
           </a>
-          <nav class="nav">
-            <ul class="nav_list">
-              <li class="nav_item">
-                <a class="nav_link" href="index.html">Inicio</a></li>
-              <li class="nav_item">
-                <a class="nav_link" href="pages/integrantes.html">Integrantes</a></li>
-              <li class="nav_item">
-                <a class="nav_link" href="pages/historia.html">Historia</a></li>
-              <li class="nav_item">
-                <a class="nav_link" href="pages/discografia.html">Discografia</a></li>
-              <li class="nav_item">
-                <a class="nav_link" href="pages/galeria.html">Galeria</a></li>
-              <li class="nav_item">
-                <a class="nav_link" href="pages/contacto.html">Contacto</a></li>
-            </ul>
-          </nav>
+        
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+            
+            <nav class="nav">
+              <ul class="nav_list ">
+                  <li class="nav_item ">
+                    <a class="nav_link active" aria-current="page" href="#">Inicio</a></li>
+                <li class="nav_item">
+                  <a class="nav_link" href="pages/integrantes.html">Integrantes</a></li>
+                <li class="nav_item">
+                  <a class="nav_link" href="pages/historia.html">Historia</a></li>
+                <li class="nav_item">
+                  <a class="nav_link" href="pages/discografia.html">Discografia</a></li>
+                <li class="nav_item">
+                  <a class="nav_link" href="pages/galeria.html">Galeria</a></li>
+                <li class="nav_item">
+                  <a class="nav_link" href="pages/contacto.html">Contacto</a></li>
+              </ul> 
+            </nav> 
+          </div>
         </div>
-      </div>
+        </div>
+    </nav>
     </header>
     <main>
         <section id="intro-section">
@@ -79,7 +88,7 @@
                   <span class="display-2-intro">Soda Stereo</span>
                 </h1>
                 <picture>
-                 <img src="img/documental-soda-stereo.jpg"alt="imagen principal soda saludando " />
+                 <img src="img/documental-soda-stereo.jpg" class="img-fluid" alt="imagen principal soda saludando " />
                 </picture>
               </div>
             </div>  
@@ -93,10 +102,12 @@
           <div class="row py-4 text-center text-black">
             <div class="col-lg-5 col-md-6 mb-md-0">Página sin fines de lucro ni comerciales</div>
             <div class="col-lg-7 col-md-6">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <ul class="footer_list">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li> <a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>

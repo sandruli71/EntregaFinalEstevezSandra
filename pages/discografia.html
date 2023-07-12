@@ -38,30 +38,39 @@
 <body>
   <!-- Header -->
   <header>
-    <!-- NAV BAR -->
-    <div class="container">
-      <div class="row">
+     <!-- NAV BAR -->
+     <nav class="navbar navbar-expand-lg navbar-light bg__component">
+      <div class="container">
+        <div class="row">
         <a href="/" class="logo">
           <img src="../img/logo soda stereo.png" alt="logo de la empresa" />
         </a>
-        <nav class="nav">
-          <ul class="nav_list">
-            <li class="nav_item">
-              <a class="nav_link" href="../index.html">Inicio</a></li>            
-            <li class="nav_item">
-              <a class="nav_link" href="integrantes.html">Integrantes</a></li>
-            <li class="nav_item">
-              <a class="nav_link" href="historia.html">Historia</a></li>
+      
+        <button class="navbar-toggler popular__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          
+          <nav class="nav">
+            <ul class="nav_list ">
+                <li class="nav_item ">
+                  <a class="nav_link" href="../index.html">Inicio</a></li>
+                  <li class="nav_item ">
+                    <a class="nav_link" href="integrantes.html">Integrantes</a></li>
               <li class="nav_item">
-              <a class="nav_link" href="discografia.html">Discografia</a></li>
-            <li class="nav_item">
-              <a class="nav_link" href="galeria.html">Galeria</a></li>
-            <li class="nav_item">
-              <a class="nav_link" href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
+                <a class="nav_link" href="historia.html">Historia</a></li>
+              <li class="nav_item">
+                <a class="nav_link active" aria-current="page" href="#">Discografia</a></li>
+              <li class="nav_item">
+                <a class="nav_link" href="galeria.html">Galeria</a></li>
+              <li class="nav_item">
+                <a class="nav_link" href="contacto.html">Contacto</a></li>
+            </ul> 
+          </nav> 
+        </div>
       </div>
-    </div>
+      </div>
+   </nav>
   </header>
   <main>
     <section id="intro-section">
@@ -75,136 +84,181 @@
         </div>
       </div>
     </section>
-    <section class="grid-cointained">
-      <article class="card card_discografia">
-      <h2 class="nombre_del_lp">Soda Stereo</h2>
-      <img id="sodastereo1984" src="../img/soda-stereo 1984.jpeg" alt="foto lp soda stero" class="foto lp soda stero" />
-      <p class="datos_del_lp">
-        <div>Editado el 27 de agosto de 1984 (CBS, luego Sony Music)</div> 
-        <ul>
-          <li>Por qué no puedo ser del jet-set?</li>
-        <li>Por qué no puedo ser del jet-set?</li>
-        <li>Sobredosis de TV</li>
-        <li>Te hacen falta vitaminas</li>
-        <li>Trátame suavemente</li>
-        <li>Dietético</li>
-        <li>Tele-ka</li>
-        <li>Ni un segundo</li>
-        <li>Un misil en mi placard</li>
-        <li>El tiempo es dinero</li>
-        <li>Afrodisíacos</li>
-        <li>Mi novia tiene bíceps</li>
-        </ul>
-        <div>Producción artística: Federico Moura. Arreglado por Soda Stereo.
-          Técnicos: Tito Huber, Charlie López, Oscar Giménez. Estudio: CBS.
-          Músicos invitados: Daniel Melero (teclados), el Gonzo (saxo). Diseño:
-          Alfredo Lois, Fernanda Cohen. Fotos sobre interno: Zeta Bosio y
-          Leonardo Satragno</div>
-      </p>
-      </article>
-      <article class="card card_discografia">
-      <h2 class="nombre_del_lp">Nada Personal</h2>
-      <img id="nada_personal" src="../img/nada-personal 1985.jpeg" alt="" class="foto lp nada personal" />
-      <p class="datos_del_lp">
-        <div>Editado el 21 de noviembre de 1985 (CBS, luego Sony Music)</div> 
-        <ul>
-          <li>Nada personal</li>
-        <li>Si no fuera por</li>
-        <li>Sobredosis de TV</li>
-        <li>Cuando pase el temblor</li>
-        <li>Danza rota</li>
-        <li>El cuerpo del delito</li>
-        <li>Juego de seducción</li>
-        <li>Estoy azulado</li>
-        <li>Observándonos -Satélites-</li>
-        <li>Imágenes retro</li>
-        <li>Ecos</li>
-        </ul>
-        <div>Arreglado y producido por Soda Stereo. Grabado y mezclado en los estudios Moebio. Técnico de grabación: Mariano López. Músicos invitados: Fabián Von Quintiero (teclados) y El Gonzo (saxo). Diseño: Alfredo Lois. Arte: Fabián Di Matteo. Fotografías: Eduardo Marti.</div>
-      </p>
-      </article>
-        <article class="card card_discografia">
-        <h2 class="nombre_del_lp">Signos</h2>
-        <img id="signos" src="../img/signos 1986.jpeg" alt="foto signos" class="foto signos" />
-        <p class="datos_del_lp">
-          <div>Editado el 10 de noviembre de 1986 (CBS, luego Sony Music)</div> 
-          <ul>
-            <li>Sin sobresaltos</li>
-            <li>El rito</li>
-            <li>Prófugos</li>
-            <li>No existes</li>
-            <li>Persiana americana</li>
-            <li>En camino</li>
-            <li>Signos</li>
-            <li>Final caja negra</li>
+    <section>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">  
+        <p class="datos_del_lp">    
+          <div class="dropdown d-grid gap-2">
+            <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Soda Stereo
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <strong>Editado el 27 de agosto de 1984 (CBS, luego Sony Music)</strong> 
+              <li>Por qué no puedo ser del jet-set?</li>
+               <li>Por qué no puedo ser del jet-set?</li>
+               <li>Sobredosis de TV</li>
+               <li>Te hacen falta vitaminas</li>
+               <li>Trátame suavemente</li>
+               <li>Dietético</li>
+               <li>Tele-ka</li>
+               <li>Ni un segundo</li>
+               <li>Un misil en mi placard</li>
+               <li>El tiempo es dinero</li>
+               <li>Afrodisíacos</li>
+               <li>Mi novia tiene bíceps</li>             
+               <div>Producción artística: Federico Moura. Arreglado por Soda Stereo.
+                Técnicos: Tito Huber, Charlie López, Oscar Giménez. Estudio: CBS.
+                Músicos invitados: Daniel Melero (teclados), el Gonzo (saxo). Diseño:
+                Alfredo Lois, Fernanda Cohen. Fotos sobre interno: Zeta Bosio y
+                Leonardo Satragno</div>
             </ul>
-            <div>Producción artística: Soda Stereo. Arreglos generales: Gustavo, Zeta, Charly, Fabián. Técnico y producción de sonido: Mariano López. Músicos invitados: Fabián von Quintiero (teclados), Celsa Mel Gowland (coros), Richard Coleman (guitarra), Diego Urcola (trompeta), Pablo Rodríguez (saxo alto), Sebastián Schon (saxo tenor), Marcelo Ferreyra (trombón). Arreglos y dirección de vientos: Pollo Raffo. Arte y diseño: Alfredo Lois, Caito Lorenzo. Foto sobre interno: Claudio Fayngolz. Polaroids: Caito Lorenzo.</div>
+          </div>
+          <picture>
+          <img src="../img/soda-stereo 1984.jpeg" class="img-fluid" alt="foto lp soda stero " />
+          </picture>
         </p>
-        </article>
-      </section>
-      <section class="grid-cointained">
-        <article class="card card_discografia">
-        <h2 class="nombre_del_lp">Ruido Blanco</h2>
-        <img id="ruido_blanco" src="../img/ruido-blanco 1987.jpeg" alt="Ruido blanco" class="ruido blanco" />
-        <p class="datos_del_lp">
-          <div>Editado el 1 de noviembre de 1987 (CBS, luego Sony Music)</div> 
-          <ul>
-            <li>Signos</li>
-          <li>Juego de seducción</li>
-          <li>Persiana americana</li>
-          <li>Sobredosis de TV</li>
-          <li>Estoy azulado *</li>
-          <li>Final caja negra</li>
-          <li>Cuando pase el temblor</li>
-          <li>Vita-set: Te hacen falta vitaminas + Por qué no puedo ser del jet-set?</li>
-          <li>Prófugos</li>
-          <li>* originalmente sólo en cassette</li>
+      </div>
+    </div>
+    <div class="accordion-item"> 
+      <p class="datos_del_lp">
+        <div class="dropdown d-grid gap-2">
+          <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Nada Personal
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+              <strong>Editado el 21 de noviembre de 1985 (CBS, luego Sony Music)</strong> 
+                <li>Nada Personal</li>
+                <li>Si no fuea por</li>
+                <li>Cuando pase el temblor</li>
+                <li>Danza rota</li>
+                <li>El cuerpo del delito</li>
+                <li>Juego de seducción</li>
+                <li>Estoy azulado</li>
+                <li>Observándonos-Satélites</li>
+                <li>Imágenes retro</li>
+                <li>Ecos</li>
+              <div>Arreglado y producido por Soda Stereo. Grabado y mezclado en los estudios Moebio. Técnico de grabación: Mariano López. Músicos invitados: Fabián Von Quintiero (teclados) y El Gonzo (saxo). Diseño: Alfredo Lois. Arte: Fabián Di Matteo. Fotografías: Eduardo Marti.</div>
           </ul>
-          <div>Producción artística: Soda Stereo. Técnico de grabación: Adrián Taverna. Mezclado en Blue Wave Studio, Barbados. Ingeniero de mezcla y programación de Sinclavier: Glem Johansen. Técnico asistente de mezcla: Mario Breuer. Edición y corte: Bernie Grundman Mastering, Los Angeles. Ingeniero de edición y corte: Chriss Bellman. Invitados: Daniel Sais (teclados, coros), The Supremes (Monica Green, Melba Houston y Anita Robinson), Gustavo Aranguren (trompeta), Ramón Carranza (saxo), Pepe Vera (saxo tenor), Rodrigo Barboza (trombón). Arreglos de vientos: Pollo Raffo. Asistentes: Jorge Rearte, Luis Bianchi, Aldo Benítez, Hugo Altuve. Arte y diseño de tapa: Caito Lorenzo, Marcela Barreiro. Fotos: Raquel Cisneros, Mario Pergolini.</div> 
-        </p>
-        </article> 
-          <article class="card card_discografia">
-          <h2 class="nombre_del_lp">Doble Vida</h2>
-          <img id="doblevida" src="../img/doble-vida 1988.jpeg" alt="foto doble vida" class="foto doble vida" />
-          <p class="datos_del_lp">
-            <div>Editado el 15 de septiembre de 1988 (CBS, luego Sony Music)</div> 
-            <ul>
-              <li>Pic-nic en el 4º B</li>
-            <li>En la ciudad de la furia</li>
-            <li>Lo que sangra -La cúpula</li>
-            <li>En el borde</li>
-            <li>Languis</li>
-            <li>Día común-doble vida</li>
-            <li>Corazón delator</li>
-            <li>El ritmo de tus ojos</li>
-            <li>Terapia de amor intensiva</li>
+        </div>
+        <picture>
+        <img src="../img/nada-personal 1985.jpeg"  class="img-fluid" alt="foto lp 1985" />
+      </picture>
+      </p>
+    </div>
+    <div class="accordion-item">
+        <p class="datos_del_lp">    
+          <div class="dropdown d-grid gap-2">
+            <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ruido Blanco
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+            <strong>Editado el 10 de noviembre de 1986 (CBS, luego Sony Music)</strong> 
+              <li>Sin sobresaltos</li>
+              <li>El rito</li>
+              <li>Prófugos</li>
+              <li>No existes</li>
+              <li>Persiana americana</li>
+              <li>En camino</li>
+              <li>Signos</li>
+              <li>Final caja negra</li>
+             <div>Producción artística: Soda Stereo. Arreglos generales: Gustavo, Zeta, Charly, Fabián. Técnico y producción de sonido: Mariano López. Músicos invitados: Fabián von Quintiero (teclados), Celsa Mel Gowland (coros), Richard Coleman (guitarra), Diego Urcola (trompeta), Pablo Rodríguez (saxo alto), Sebastián Schon (saxo tenor), Marcelo Ferreyra (trombón). Arreglos y dirección de vientos: Pollo Raffo. Arte y diseño: Alfredo Lois, Caito Lorenzo. Foto sobre interno: Claudio Fayngolz. Polaroids: Caito Lorenzo.</div>
             </ul>
+          </div>
+          <picture>
+           <img src="../img/signos 1986.jpeg"  class="img-fluid" alt="foto lp 1986" />
+        </picture>
+        </p>
+    </div>
+  </section>
+  <section>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">  
+        <p class="datos_del_lp">    
+          <div class="dropdown d-grid gap-2">
+            <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ruido Blanco
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <strong>Editado el 1 de noviembre de 1987 (CBS, luego Sony Music)</strong> 
+              <li>Signos</li>
+              <li>Juego de seducción</li>
+              <li>Persiana americana</li>
+              <li>Sobredosis de TV</li>
+              <li>Estoy azulado *</li>
+              <li>Final caja negra</li>
+              <li>Cuando pase el temblor</li>
+              <li>Vita-set: Te hacen falta vitaminas + Por qué no puedo ser del jet-set?</li>
+              <li>Prófugos</li>
+              <li>* originalmente sólo en cassette</li>
+               <div>Producción artística: Soda Stereo. Técnico de grabación: Adrián Taverna. Mezclado en Blue Wave Studio, Barbados. Ingeniero de mezcla y programación de Sinclavier: Glem Johansen. Técnico asistente de mezcla: Mario Breuer. Edición y corte: Bernie Grundman Mastering, Los Angeles. Ingeniero de edición y corte: Chriss Bellman. Invitados: Daniel Sais (teclados, coros), The Supremes (Monica Green, Melba Houston y Anita Robinson), Gustavo Aranguren (trompeta), Ramón Carranza (saxo), Pepe Vera (saxo tenor), Rodrigo Barboza (trombón). Arreglos de vientos: Pollo Raffo. Asistentes: Jorge Rearte, Luis Bianchi, Aldo Benítez, Hugo Altuve. Arte y diseño de tapa: Caito Lorenzo, Marcela Barreiro. Fotos: Raquel Cisneros, Mario Pergolini.</div> 
+          </div>          
+            </ul>
+          </div>
+          <picture>
+          <img src="../img/ruido-blanco 1987.jpeg" class="img-fluid" alt="foto lp 1987 " />
+          </picture>
+        </p>
+      </div>
+    </div>
+       <div class="accordion-item">
+        <p class="datos_del_lp">    
+          <div class="dropdown d-grid gap-2">
+            <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Doble Vida
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">  
+            <strong>Editado el 15 de septiembre de 1988 (CBS, luego Sony Music)</strong> 
+                <li>Pic-nic en el 4º B</li>
+              <li>En la ciudad de la furia</li>
+              <li>Lo que sangra -La cúpula</li>
+              <li>En el borde</li>
+              <li>Languis</li>
+              <li>Día común-doble vida</li>
+              <li>Corazón delator</li>
+              <li>El ritmo de tus ojos</li>
+              <li>Terapia de amor intensiva</li>
             <div>Producido por Carlos Alomar. Mezclado por Gustavo Cerati y Zeta Bosio. Arreglos generales: Soda Stereo, Daniel Sais y Carlos Alomar. Grabado y mezclado en Sorcerer Sound, NYC. Ingeniero: Andy Heermans. Ingeniero asistente: Shawna Stobie. Mastering por Bob Ludwig en Masterdisk, NYC. Invitados: Daniel Sais (teclados), Carlos Alomar (guitarra y voz, rap en “En el borde”), Lenny Pickett (saxo tenor), Chris Botti (trompeta). Arte y diseño de tapa: Alfredo Lois y Tite Barbuzza. Fotografías: Daniel Ackerman.</div>
-          </p>
-          </article>
-            <article class="card card_discografia">
-            <h2 class="nombre_del_lp">Languis</h2>
-            <img id="languis" src="../img/languis1989.jpeg" alt="Foto Languis" class="foto languis" />
-            <p class="datos_del_lp">
-              <div>Editado en octubre de 1989 (CBS, luego Sony Music)</div> 
-              <ul>
+            </ul>
+         </div>
+         <picture>
+           <img src="../img/doble-vida 1988.jpeg"  class="img-fluid" alt="foto lp 1988" />
+        </picture>
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <p class="datos_del_lp">    
+        <div class="dropdown d-grid gap-2">
+          <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Languis
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">  
+            <strong>Editado en octubre de 1989 (CBS, luego Sony Music)</strong> 
                 <li>Mundo de quimeras</li>
               <li>Los languis -nueva versíon 1989</li>
               <li>En el borde -versión remix</li>
               <li>Lo que sangra -La cúpula -versión remix</li>
-              </ul>
               <div>Arreglado y producido por Soda Stereo. Remixes de la Cupula y En el borde, producidos por Zeta Bosio. Grabado en estudios Ion y Panda. Mezclado en Panda en septiembre de 1989. Remixes de “En el borde” y “Lo que sangra -La cúpula” producidos por Zeta Bosio. Ingeniero de grabación y mezcla: Mariano López. Técnico adicional: Mario Breuer. Asistente de grabación y mezcla: Adrián Taverna. Músicos invitados: Tweety González, Andrea Alvarez, El Gonzo Palacios, Mavy Díaz, Chris Botti, Lenny Pickett, Daniel Sais y Carlos Alomar. Arte y diseño: Alfredo Lois y Silvina Mansilla. Tipografía. Mariana Mocchi y Alfredo Lois.</div>
-            </p>
-          </article>
-      </section>
-      <section class="grid-cointained">
-        <article class="card card_discografia">
-        <h2 class="nombre_del_lp">Canción Animal</h2>
-        <img id="cancionanimal" src="../img/cancion-animal 1990.jpeg" alt="foto cancion animal" class="foto cancion animal" />
-        <p class="datos_del_lp">
-          <div>Editado el 7 de agosto de 1990 (Sony Music)</div> 
-          <ul>
-            <li>En el séptimo día</li>
+            </ul>
+          </div>
+         <picture>
+           <img src="../img/languis1989.jpeg"  class="img-fluid" alt="foto lp 1989" />
+        </picture>
+        </p>
+      </div>
+    </div>
+  </section>
+    <section>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">  
+          <p class="datos_del_lp">    
+            <div class="dropdown d-grid gap-2">
+              <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Cancion Animal
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+            <strong>Editado el 7 de agosto de 1990 (Sony Music)</strong> 
+              <li>En el séptimo día</li>
           <li>Un millón de años luz</li>
           <li>Canción animal</li>
           <li>1990</li>
@@ -214,16 +268,23 @@
           <li>Entre caníbales</li>
           <li>Té para tres</li>
           <li>Cae el sol</li>
-          </ul>
           <div>Producción artística: Gustavo Cerati & Zeta Bosio. Grabado y mezclado en Criteria Recording Studios, USA. Ingeniero de grabación y mezcla: Mariano López. Asistente de estudio: Roger Hughes. Asistente de grupo: Adrián Taverna. Mastering por Michael Fuller en Fullersound, USA. Musicos invitados: Tweety González, Andrea Álvarez, Daniel Melero. Aporte conceptual: Daniel Melero. Arreglos vocales en “En el séptimo día”, “Un millón de años luz”y “1990”: Pedro Aznar. Idea & diseño de tapa: Gustavo Cerati & Zeta Bosio. Arte: Alfredo Lois. Asistente: Vanesa Eckstem. Fotografías: Caito Lorenzo & Alfredo Lois.</div>
+          </ul>
+        </div>
+         <picture>
+           <img src="../img/cancion-animal 1990.jpeg"  class="img-fluid" alt="foto lp 1990" />
+        </picture>
         </p>
-        </article>
-          <article class="card card_discografia">
-          <h2 class="nombre_del_lp">Rex Mix</h2>
-          <img id="rexmix" src="../img/rex-mix 1991.jpeg" alt="foto rex mix" class="foto rex mix" />
-          <p class="datos_del_lp">
-            <div>Editado el 25 de octubre de 1991 (Sony Music)</div> 
-            <ul>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <p class="datos_del_lp">    
+      <div class="dropdown d-grid gap-2">
+        <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Rex Mix
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <strong>Editado el 25 de octubre de 1991 (Sony Music)</strong> 
               <li>Hombre al agua</li>
             <li>No existes *</li>
             <li>En camino -Viva la Patria mix</li>
@@ -232,17 +293,24 @@
             <li>En camino -Veranek mix *</li>
             <li>No necesito verte -para saberlo -Candombe mix *</li>
             <li>* no incluídos en el vinilo original</li>
-            </ul>
             <div>Producción artística: Gustavo Cerati & Zeta Bosio. Registrados en vivo en el Teatro Gran Rex, Bs. As., el 9 de julio de 1991. Todos los temas grabados & mezclados en el estudio Supersónico. Ingeniero de grabación & mezcla: Mariano López, Eduardo Bergallo (remixes) & Adrian Taverna. Asistentes: Eduardo Iencenella, Martín Febro. Mastering por Michael Fuller, Fullersound, MIA, USA. Con la participación de Tweety González (teclados & guitarra acústica), Daniel Melero (teclados & coros, voz en “No necesito verte”), Andrea Alvarez (percusión & coro en “Hombre al agua”). Diseño de tapa: Gabriela Malerba, Alejandro Ros. Fotografías: Gabriela Malerba.</div>
-          </p>
-          </article>
-            <article class="card card_discografia">
-            <h2 class="nombre_del_lp">Dynamo</h2>
-            <img id="dynamo" src="../img/dynamo 1992.jpeg" alt="foto dynamo" class="foto dynamo" />
-            <p class="datos_del_lp">
-              <div>Editado el 1 de octubre de 1992 (Sony Music)</div> 
-              <ul>
-                <li>Secuencia inicial</li>
+          </ul>
+        </div>
+         <picture>
+           <img src="../img/rex-mix 1991.jpeg"  class="img-fluid" alt="foto lp 1991" />
+        </picture>
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <p class="datos_del_lp">    
+        <div class="dropdown d-grid gap-2">
+          <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dynamo
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <strong>Editado el 1 de octubre de 1992 (Sony Music)</strong>          
+              <li>Secuencia inicial</li>
               <li>Toma la ruta</li>
               <li>En remolinos</li>
               <li>Primavera 0</li>
@@ -254,19 +322,27 @@
               <li>Claroscuro</li>
               <li>Fue</li>
               <li>Texturas</li>
-              </ul>
               <div>Producción artística: Gustavo Cerati - Zeta Bosio, con la colaboración de Daniel Melero. Músicos invitados: Daniel Melero (sampler y sintetizador), Tweety González (sampler y asistencia de programación), Flavio Etcheto (trompeta), Sanjay Shadoriya (tabla, padanth voice), Eduardo Blacher (tambura) y Roberto Kuczer (sitar). Grabado y mezclado en estudios Supersónico. Ingeniero: Mariano López. Mezcla: Mariano López/Gustavo Cerati/Zeta Bosio. Asistente: Eduardo “Barakus” Iencenella. Mastering: Arnie Acosta en A&M Mastering Studios, Los Angeles, USA. Arte y diseño: Gabriela Malerba - Alejandro Ros. Fotografía: Daniel Ackerman.</div>
-            </p>
-            </article>
-      </section>
-      <section class="grid-cointained">
-        <article class="card card_discografia">
-        <h2 class="nombre_del_lp">Zona de Promesas</h2>
-        <img id="zonadepromesas" src="../img/zona-de-promesas 1993.jpeg" alt="foto zona de promesas" class="foto zona de promesas" />
-        <p class="datos_del_lp">
-          <div>Editado el 1 de septiembre de 1993 (Sony Music)</div> 
-          <ul>
-            <li>Zona de promesas</li>
+            </ul>
+          </div>
+          <picture>
+           <img src="../img/dynamo 1992.jpeg"  class="img-fluid" alt="foto lp 1992" />
+        </picture>
+        </p>
+    </div>
+  </div>
+  </section>
+   <section>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">  
+        <p class="datos_del_lp">    
+          <div class="dropdown d-grid gap-2">
+            <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Zona de Promesas
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+            <strong>Editado el 1 de septiembre de 1993 (Sony Music)</strong> 
+              <li>Zona de promesas</li>
           <li>Primavera 0 -bonzo mix</li>
           <li>En la ciudad de la furia -dance mix</li>
           <li>Nada personal -remix</li>
@@ -276,16 +352,23 @@
           <li>No necesito verte (para saberlo) -krupa mix</li>
           <li>Sobredosis de TV -remix</li>
           <li>Lo que sangra (La cúpula) -versión remix</li>
-          </ul>
           <div>“En la ciudad de la furia” remixado por Ziggy P. en Dusseldorf.“Cuando pase el temblor” remixado por Nicolás Guerrieri, Alejandro Guerrieri, Ezequiel Dero y Tuti Gianakis. Diseño e imágenes: Gabriela Malerba.</div>
-        </p>
-        </article>
-          <article class="card card_discografia">
-          <h2 class="nombre_del_lp">Sueño Stereo</h2>
-          <img id="suenostereo" src="../img/sueno-stereo 1995.jpeg" alt="foto sueno stereo" class="foto sueno stero" />
-          <p class="datos_del_lp">
-            <div>Editado el 21 de junio de 1995 (BMG Ariola, luego Sony Music)</div> 
-            <ul>
+        </ul>
+      </div>
+      <picture>
+           <img src="../img/zona-de-promesas 1993.jpeg"  class="img-fluid" alt="foto lp 1993" />
+        </picture>
+    </p>
+    </div>
+  </div>
+    <div class="accordion-item">
+      <p class="datos_del_lp">    
+        <div class="dropdown d-grid gap-2">
+          <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sueño Stereo
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <strong>Editado el 21 de junio de 1995 (BMG Ariola, luego Sony Music)</strong> 
               <li>Ella usó mi cabeza como un revolver</li>
             <li>Disco eterno</li>
             <li>Zoom</li>
@@ -298,16 +381,23 @@
             <li>Planta</li>
             <li>X-Playo</li>
             <li> Moirè</li>
-            </ul>
             <div>Producción artística: Gustavo Cerati & Zeta Bosio. Grabado en los estudios Supersónico (Argentina) y Matrix (UK). Ingenieros de grabación: Eduardo Bergallo y Clive Goddard. Mezclado en Matrix. Ingeniero de mezcla: Clive Goddard. Segundo ingeniero: Eduardo Bergallo. Cuerdas grabadas en Moebio, por Laura Fonzo y Carlos Piriz. Asistentes: Eduardo “Barakus” Iencenella, Juan Maggi. Músicos invitados: Alejandro Terán (viola), Janos Morel (1er. violín), Mauricio Alves (2do. violín) y Pablo Flumetti (cello), Roy Málaga (piano rhodes en “Ojo de la tormenta” y “Crema de estrellas”), Flavio Etcheto (trompeta). Arreglos de cuerdas: Alejandro Terán. Arte y diseño: Gabriela Malerba-Alejandro Ros. Foto grupo: Cecilia Amenábar. Foto objetos: Fabris-Truscello.</div>
-          </p>
-          </article>
-          <article class="card card_discografia">
-          <h2 class="nombre_del_lp">Confort y musica para volar</h2>
-          <img id="confortymusicaparavolar" src="../img/comfort-y-musica-para-volar 1996.jpeg" alt="foto confort y musica para volar" class="foto confort y musica para volar" />
-          <p class="datos_del_lp">
-            <div>Editado el 25 de septiembre de 1996 (BMG Ariola, luego Sony Music)</div> 
-            <ul>
+          </ul>
+        </div>
+        <picture>
+           <img src="../img/sueno-stereo 1995.jpeg"  class="img-fluid" alt="foto lp 1995" />
+        </picture>
+      </p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <p class="datos_del_lp">    
+      <div class="dropdown d-grid gap-2">
+        <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Comfort y Música para volar
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <strong>Editado el 25 de septiembre de 1996 (BMG Ariola, luego Sony Music)</strong> 
               <li>Un misil en mi placard</li>
             <li>En la ciudad de la furia</li>
             <li>Entre caníbales</li>
@@ -322,19 +412,27 @@
             <li>Paseando por Roma</li>
             <li>Génesis</li>
             <li>*: la edición original incluía los temas Sonoman (Cerati-Bosio-Alberti), Planeador (Cerati-Bosio-Alberti), Coral (Cerati) y Superstar (Cerati-Bosio-Alberti)</li>
-            </ul>
             <div>Grabado en vivo el 12 de marzo de 1996 en los estudios MTV, Miami Beach, Florida, USA. Gustavo Cerati: voz, guitarra acústica, elecrica & virtual. Zeta Bosio: bajo, guitarra acústica, coros. Charly Alberti: batería, percusión. Grabado en estudios Master (Chile), Supersónico (Buenos Aires), Matrix (Londres), y Artisan Estudio Móvil (Miami). Ingeniero de grabación, mezcla y mastering: Eduardo Bergallo.Monitoreo: Adrián Taverna.Asistentes de estudio: Eduardo Iencenella, Mariano Rodríguez, Lloyd Gardines y Joaquín García. Edición digital: Konstantinopla (Chile). Mastering y edición final: Mr. Master. Músicos invitados: Tweety Gonzalez (piano Rhodes, sampler & sintetizadores), Pedro Fainguersch (viola), Diego Fainguersch (cello), Ezequiel Fainguersch (fagot), Iain Baker (teclados en “Sonoman”) Participación especial de Andrea Etcheverri: voz en “En la ciudad de la furia”. Asistente de guitarras: Eduardo Iencenella. Asistente de bajos: Miguel Lara. Asistente de baterías: Horacio Maggi. Asistentes de teclados y samplers: Andy Ficicchia. Dibujos: Silvia Canosa. Fotos: Gabriela Malerba, Mauro Volpara. Diseño: Alejandro Ros.</div>
-          </p>
-          </article>
-      </section>
-          <section class="grid-cointained">
-            <article class="card card_discografia">
-            <h2 class="nombre_del_lp">El Ultimo Conciero A</h2>
-            <img id="elultimoconciertoa" src="../img/el-ultimo-concierto-a 1997.jpeg" alt="foto ultimo concierto A" class="foto ultimo concierto a" />
-            <p class="datos_del_lp">
-              <div>Editado el 16 de diciembre de 1997 (BMG Ariola, luego Sony Music)</div> 
-              <ul>
-                <li>En la ciudad de la furia</li>
+          </ul>
+        </div>
+      <picture>
+           <img src="../img/comfort-y-musica-para-volar 1996.jpeg"  class="img-fluid" alt="foto lp 1996" />
+        </picture>
+      </p>
+    </div>
+  </div>
+</section>
+    <section>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">  
+          <p class="datos_del_lp">    
+            <div class="dropdown d-grid gap-2">
+              <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  El Último Concierto A
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+            <strong>Editado el 16 de diciembre de 1997 (BMG Ariola, luego Sony Music)</strong> 
+              <li>En la ciudad de la furia</li>
               <li>El rito</li>
               <li>Hombre al agua</li>
               <li> En el séptimo día</li>
@@ -345,17 +443,24 @@
               <li>Zoom</li>
               <li>Signos</li>
               <li>Ella usó mi cabeza como un revólver</li>
-              </ul>
               <div>Mezclado por: Gustavo Cerati. Grabado en la gira “El último concierto” en México, Venezuela, Chile y Argentina, entre agosto y septiembre de 1997. Estudios móviles: Master, Procolor, Artisan y Gibraltar. Ingeniero de grabación: Mariano López. Asistentes de grabación: Mariano Rodríguez, Marcelo Mattioli, Joaquín García. Mezclado en: Estudio El Pie. Ingeniero mezcla: Eduardo Bergallo. Supervisión de mezcla: Adrián Taverna. Asistente de mezcla: Sebastián Loscicer. Mastering en USA: Chris Gehringer (Hit Factory USA) Músicos invitados: Teclados y programación: Tweety González. Los especialistas: Saxo tenor, viola, guitarra y percusión: Alejandro Terán. Flauta traversa, acordeón, saxo barítono, teclados y percusión: Axel Krygier. Músicos invitados en River: Andrea Álvarez, Richard Coleman, Daniel Sais, Fabián Quintiero. Fotos: Francisco Flores (concierto), Lois (video Ultimo Concierto), Fabris-Truscello (encendedores). Diseño: Ros.</div>
-            </p>
-            </article>
-              <article class="card card_discografia">
-              <h2 class="nombre_del_lp">El Ultimo Concierto <B></B></h2>
-              <img id="elultimoconciertob" src="../img/el-ultimo-concierto-b 1997.jpeg" alt="foto el ultimo concierto b" class="foto el ultimo concierto b" />
-              <p class="datos_del_lp">
-                <div>Editado el 16 de diciembre de 1997 (BMG Ariola, luego Sony Music)</div> 
-                <ul>
-                  <li>Disco eterno</li>
+            </ul>
+          </div>
+          <picture>
+           <img src="../img/el-ultimo-concierto-a 1997.jpeg"  class="img-fluid" alt="foto lp 1997" />
+        </picture>
+        </p>
+    </div>
+  </div>
+    <div class="accordion-item">
+      <p class="datos_del_lp">    
+        <div class="dropdown d-grid gap-2">
+          <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              El Último Concierto B
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <strong>Editado el 16 de diciembre de 1997 (BMG Ariola, luego Sony Music)</strong> 
+              <li>Disco eterno</li>
                 <li>Planeador</li>
                 <li>Luna roja</li>
                 <li>Té para tres</li>
@@ -366,17 +471,24 @@
                 <li>Primavera 0</li>
                 <li>Cae el sol</li>
                 <li>De música ligera</li>
-                </ul>
                 <div>Mezclado por: Gustavo Cerati. Grabado en la gira “El último concierto” en México, Venezuela, Chile y Argentina, entre agosto y septiembre de 1997. Estudios móviles: Master, Procolor, Artisan y Gibraltar. Ingeniero de grabación: Mariano López. Asistentes de grabación: Mariano Rodríguez, Marcelo Mattioli, Joaquín García. Mezclado en: Estudio El Pie. Ingeniero mezcla: Eduardo Bergallo. Supervisión de mezcla: Adrián Taverna. Asistente de mezcla: Sebastián Loscicer. Mastering en USA: Chris Gehringer (Hit Factory USA) Músicos invitados: Teclados y programación: Tweety González. Los especialistas: Saxo tenor, viola, guitarra y percusión: Alejandro Terán. Flauta traversa, acordeón, saxo barítono, teclados y percusión: Axel Krygier. Músicos invitados en River: Andrea Álvarez, Richard Coleman, Daniel Sais, Fabián Quintiero. Fotos: Francisco Flores (concierto), Lois (video Ultimo Concierto), Fabris-Truscello (encendedores). Diseño: Ros.</div>
-              </p>
-              </article>
-                <article class="card card_discografia">
-                <h2 class="nombre_del_lp">Me veras volver 1</h2>
-                <img id="me_veras_volver" src="../img/gira-me-veras-volver-1 2008.jpeg" alt="foto me veras volver" class="foto me veras volver" />
-                <p class="datos_del_lp">
-                  <div>Editado el 18 de julio de 2008 (Sony Music)</div> 
-                  <ul>
-                    <li>Juegos de seducción</li>
+               </ul>
+              </div>
+            <picture>
+           <img src="../img/el-ultimo-concierto-b 1997.jpeg"  class="img-fluid" alt="foto lp 1997b" />
+        </picture>
+          </p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <p class="datos_del_lp">    
+      <div class="dropdown d-grid gap-2">
+        <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gira Me Verás Volver #1
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <strong>Editado el 18 de julio de 2008 (Sony Music)</strong> 
+              <li>Juegos de seducción</li>
                   <li>Tele-k</li>
                   <li>Imágenes retro</li>
                   <li>Texturas</li>
@@ -390,45 +502,58 @@
                   <li>Signos</li>
                   <li>Sobredosis de TV</li>
                   <li> Danza rota</li>        
-                  </ul>
                   <div>Mezclado por Gustavo Cerati. Grabado en la gira “Me verás volver” entre octubre y diciembre de 2007, en Buenos Aires, Miami, Bogotá, Lima. Estudio de grabación móvil: Z1.Studio manager: Santiago Zambonini.Asistentes: Sebastián Sánchez, Tomás Zambonini y Mariano Zambonini.Soporte Protools: Ricardo Pegnotti y Diego Keller. Ingeniero de grabación: Eduardo Bergallo.Asistente de grabación: Max Scenna.Mezcla: Eduardo Bergallo en Revólver (Buenos Aires, Argentina), Excepto “Imágenes retro” y “Texturas”, mezclados por Mariano López en Unísono (Buenos Aires, Argentina).Asistente de mezcla y ediciones en Revólver: Pablo Nelken.Asistente de mezcla y ediciones en Unísono: Nicolás Pucci.Supervisor de mezclas: Adrián Taverna. Mastering: Howie Weinberg (Masterdisk, NY). Músicos invitados: Tweety González, Leandro Fresco y Leo García. Fotos: Damián Benetucci y Germán Sáez.Diseño: Rock Instrument Bureau.</div>
-                </p>
-                </article>
-          </section>
-          <section class="grid-cointained">
-            <article class="card card_discografia">
-            <h2 class="nombre_del_lp">Me veras volver 2</h2>
-            <img id="me_veras_volver_2" src="../img/gira-me-veras-volver-2 2008.jpeg" alt="foto me veras volver 2" class="foto me veras vovler 2" />
-            <p class="datos_del_lp">
-              <div></div> 
-              <ul>
-                <li>Editado el 18 de julio de 2008 (Sony Music)</li>
-              <li>Persiana americana</li>
-              <li>Fue</li>
-              <li> En remolinos</li>
-              <li>Primavera 0</li>
-              <li> No existes</li>
-              <li>Sueles dejarme solo</li>
-              <li>En el séptimo día</li>
-              <li>Un millón de años luz</li>
-              <li> De música ligera</li>
-              <li>Zona de promesas</li>
-              <li>Cae el sol</li>
-              <li>Prófugos</li>
-              <li>Nada personal</li>
-              <li>Te hacen falta vitaminas</li>
-              </ul>
-              <div>Mezclado por Gustavo Cerati. Grabado en la gira “Me verás volver” entre octubre y diciembre de 2007, en Buenos Aires, Miami, Bogotá, Lima. Estudio de grabación móvil: Z1.Studio manager: Santiago Zambonini.Asistentes: Sebastián Sánchez, Tomás Zambonini y Mariano Zambonini.Soporte Protools: Ricardo Pegnotti y Diego Keller. Ingeniero de grabación: Eduardo Bergallo.Asistente de grabación: Max Scenna.Mezcla: Eduardo Bergallo en Revólver (Buenos Aires, Argentina), Excepto “Imágenes retro” y “Texturas”, mezclados por Mariano López en Unísono (Buenos Aires, Argentina).Asistente de mezcla y ediciones en Revólver: Pablo Nelken.Asistente de mezcla y ediciones en Unísono: Nicolás Pucci.Supervisor de mezclas: Adrián Taverna. Mastering: Howie Weinberg (Masterdisk, NY). Músicos invitados: Tweety González, Leandro Fresco y Leo García. Fotos: Damián Benetucci y Germán Sáez.Diseño: Rock Instrument Bureau.</div>
+                 </ul>
+                </div>
+              <picture>
+           <img src="../img/gira-me-veras-volver-1 2008.jpeg"  class="img-fluid" alt="foto lp 2008" />
+        </picture>
             </p>
-            </article>
-            <section class="grid-cointained">
-              <article class="card card_discografia">
-              <h2 class="nombre_del_lp">Sep7imo dia</h2>
-              <img id="sep7imodia" src="../img/sep7imo-dia 2017.jpeg" alt="foto septimo dia" class="foto septimo dia" />
-              <p class="datos_del_lp">
-                <div>Editado el 10 de marzo de 2017 (Sony Music)</div> 
-                <ul>
-                  <li>En el séptimo día</li>
+          </div>
+    </div>
+  </section>
+    <section>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">  
+          <p class="datos_del_lp">    
+            <div class="dropdown d-grid gap-2">
+              <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gira Me Verás Volver #2
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+            <strong>Editado el 18 de julio de 2008 (Sony Music)</strong> 
+              <li>Juegos de seducción</li>
+                  <li>Tele-k</li>
+                  <li>Imágenes retro</li>
+                  <li>Texturas</li>
+                  <li>Hombre al agua</li>
+                  <li>En la ciudad de la furia</li>
+                  <li>Picnic en el 4ºB</li>
+                  <li>Zoom</li>
+                  <li>Cuando pase el temblor</li>
+                  <li>Final caja negra</li>
+                  <li>Corazón delator</li>
+                  <li>Signos</li>
+                  <li>Sobredosis de TV</li>
+                  <li> Danza rota</li>   
+                  <div>Mezclado por Gustavo Cerati. Grabado en la gira “Me verás volver” entre octubre y diciembre de 2007, en Buenos Aires, Miami, Bogotá, Lima. Estudio de grabación móvil: Z1.Studio manager: Santiago Zambonini.Asistentes: Sebastián Sánchez, Tomás Zambonini y Mariano Zambonini.Soporte Protools: Ricardo Pegnotti y Diego Keller. Ingeniero de grabación: Eduardo Bergallo.Asistente de grabación: Max Scenna.Mezcla: Eduardo Bergallo en Revólver (Buenos Aires, Argentina), Excepto “Imágenes retro” y “Texturas”, mezclados por Mariano López en Unísono (Buenos Aires, Argentina).Asistente de mezcla y ediciones en Revólver: Pablo Nelken.Asistente de mezcla y ediciones en Unísono: Nicolás Pucci.Supervisor de mezclas: Adrián Taverna. Mastering: Howie Weinberg (Masterdisk, NY). Músicos invitados: Tweety González, Leandro Fresco y Leo García. Fotos: Damián Benetucci y Germán Sáez.Diseño: Rock Instrument Bureau.</div>
+                </ul>
+              </div>
+              <picture>
+           <img src="../img/gira-me-veras-volver-2 2008.jpeg"  class="img-fluid" alt="foto lp 2008" />
+        </picture>
+            </p>
+          </div>
+    </div>
+    <div class="accordion-item">
+      <p class="datos_del_lp">    
+        <div class="dropdown d-grid gap-2">
+          <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sep7imo Día
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <strong>Editado el 10 de marzo de 2017 (Sony Music)</strong> 
+              <li>En el séptimo día</li>
                 <li>Cae el sol + Planta</li>
                 <li>Picnic en el 4B + Te hacen falta vitaminas + Mi novia tiene biceps</li>
                 <li>Ella usó un misil / Prófugos</li>
@@ -448,23 +573,47 @@
                 <li>Primavera 0</li>
                 <li> música ligera</li>
                 <li>Terapia de amor intensiva</li>
-                </ul>
                 <div>Producción artística: Zeta Bosio y Charly Alberti.Co-productor: Adrián Taverna. Técnico de estudio: Nicolás Pucci.Ingeniero de edición y pre mezcla: Fernando Cobo.Estudio producción de mezclas: Unísono (Buenos Aires).Coordinadoras de producción: Agostina Obeid y Paula Carballal.Restauración de cintas: Nano Suárez.Transfer cinta 2 pulgadas: Unísono.Transfer adat: Ceartec.Transfer cinta 1 pulgada: Estudio del Abasto. Ingeniero de mezcla: Gustavo Borner.Edición digital: Justin Moshkevich, Derek Snyder y Jay Markovitz.Asistentes de mezcla: Phil Levine y Jorge Alamar.Ingeniero de mastering: Nick Baxter.Estudio de mezcla y mastering: Igloo Music (Los Angeles).Diseño: Rock Instrument Bureau.</div>
-              </p>
-              </article>
+              </ul>
+            </div>
+            <picture>
+            <img src="../img/sep7imo-dia 2017.jpeg"  class="img-fluid" alt="foto lp 2017" />
+            </picture>
+       </p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <p class="datos_del_lp">    
+      <div class="dropdown d-grid gap-2">
+        <button class="btn btn-dark btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            GRACIAS TOTALES
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <strong>GRACIAS TOTALES</strong> 
+            </ul>
+          </div>
+          <picture>
+          <img src="../img/soda stereoavatars-000110124358-xzavjd-t500x500.jpeg"  class="img-fluid" alt="foto lp 2017" />
+          </picture>
+     </p>
+  </div>
+</div>
+  
   </section>
   </main>
     <!-- FOOTER -->
     <footer class="footer pt-0 bg-yellow">
       <div class="footer-sm text-black">
-       <div class="container">
-         <div class="row py-4 text-center text-black">
-           <div class="col-lg-5 col-md-6 mb-md-0">Página sin fines de lucro ni comerciales</div>
+        <div class="container">
+          <div class="row py-4 text-center text-black">
+            <div class="col-lg-5 col-md-6 mb-md-0">Página sin fines de lucro ni comerciales</div>
             <div class="col-lg-7 col-md-6">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <ul class="footer_list">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li> <a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>

@@ -39,29 +39,39 @@
     <!-- Header -->
     <header>
       <!-- NAV BAR -->
-      <div class="container">
-        <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg__component">
+        <div class="container">
+          <div class="row">
           <a href="/" class="logo">
             <img src="../img/logo soda stereo.png" alt="logo de la empresa" />
           </a>
-          <nav class="nav">
-            <ul class="nav_list">
-              <li class="nav_item">
-                <a class="nav_link" href="../index.html">Inicio</a></li>
-              <li class="nav_item">
-                <a class="nav_link" href="integrantes.html">Integrantes</a></li>
-              <li class="nav_item">
-                <a class="nav_link" href="historia.html">Historia</a></li>
-              <li class="nav_item">
-                <a class="nav_link" href="discografia.html">Discografia</a></li>
-              <li class="nav_item">
-                <a class="nav_link" href="galeria.html">Galeria</a></li>
-              <li class="nav_item">
-                <a class="nav_link" href="contacto.html">Contacto</a></li>
-            </ul>
-          </nav>
+        
+          <button class="navbar-toggler popular__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            
+            <nav class="nav">
+              <ul class="nav_list ">
+                  <li class="nav_item ">
+                    <a class="nav_link" href="../index.html">Inicio</a></li>
+                    <li class="nav_item ">
+                      <a class="nav_link" href="integrantes.html">Integrantes</a></li>
+                <li class="nav_item">
+                  <a class="nav_link active" aria-current="page" href="#">Historia</a></li>
+                  
+                <li class="nav_item">
+                  <a class="nav_link" href="discografia.html">Discografia</a></li>
+                <li class="nav_item">
+                  <a class="nav_link" href="galeria.html">Galeria</a></li>
+                <li class="nav_item">
+                  <a class="nav_link" href="contacto.html">Contacto</a></li>
+              </ul> 
+            </nav> 
+          </div>
         </div>
-      </div>
+        </div>
+    </nav>
     </header>
     <main>
       <section id="intro-section">
@@ -75,31 +85,34 @@
           </div>
         </div>
       </section>
-      <section class="us"> 
-        <div><h2>1982</h2>
-        <img id="1982" src="../img/1982.png" alt="" class="foto 1982" />
-        </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>La escena under y un contrato discográfico En julio de 1983 surge
-      la posibilidad de tocar en una discoteca y Soda Stereo da su primer
-      recital, iniciando una serie de presentaciones en el flamante circuito
-      under de Buenos Aires, a la par de otros artistas insignias de un recambio
-      generacionl del rock argentino, ya sobre el final de la dictadura militar
-      y la vuelta a la democracia. Por ejemplo Virus, Sumo, Los Twist,
-      Metrópoli, La Sobrecarga y Diana Nylon. Al tercer show, un importante
-      productor les ofrece grabar para el sello CBS y firman contrato.
-              </p>
+      
+      <h2>1982</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/1982.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">Soda Stereo nace a principios de 1982 con la unión de Gustavo Cerati, Zeta Bosio y Charly Alberti, tres apenas veinteañeros que buscan armar un grupo con influencias de la novedosa corriente new-wave de Inglaterra y Estados Unidos, muy poco explorada en Argentina.
+
+                Zeta y Gustavo se conocen desde 1979 cursando la carrera de Comunicación en la Universidad del Salvador, donde forjan una gran amistad ya que comparten los mismos gustos musicales. También tocan juntos en el grupo de covers The Morgan (por donde incluso pasa Andrés Calamaro) y otro llamado Stress. Se proponen armar una banda con composiciones propias y en castellano. La idea toma forma durante el verano y se concreta en marzo, al conocer casi de casualidad a Charly. Se juntan y de inmediato hay química entre ellos. Durante todo el año se dedican a ensayar con entusiasmo, intensidad y la convicción de tener algo único entre las manos.
+                
+            </div>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1983</h2>
-        <img id="1983" src="../img/1983.jpg" alt="" class="foto 1983" />
-        </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>La escena under y un contrato discográfico En julio de 1983 surge
+      </div>
+      <h2>1983</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/1983.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">La escena under y un contrato discográfico En julio de 1983 surge
               la posibilidad de tocar en una discoteca y Soda Stereo da su primer
               recital, iniciando una serie de presentaciones en el flamante circuito
               under de Buenos Aires, a la par de otros artistas insignias de un recambio
@@ -109,14 +122,17 @@
               productor les ofrece grabar para el sello CBS y firman contrato.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1984</h2>
-        <img id="1984" src="../img/1984.jpg" alt="" class="foto 1984" />
         </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>El álbum debut Varios meses después de firmar contrato, Soda
+      </div>
+      <h2>1984</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/1984.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-text">El álbum debut Varios meses después de firmar contrato, Soda
               finalmente logra grabar su álbum debut, titulado “Soda Stereo”, a secas,
               con un sonido nuevo, fresco y original, altamente contagioso, tal como
               demuestran los hits “¿Por qué no puedo ser del jet-set?”, “Sobredosis de
@@ -127,16 +143,20 @@
               noche. La presentación oficial es el 14 de diciembre en el Teatro Astros,
               a sala llena y con una imaginativa puesta en escena con televisores viejos
               de fondo.</p>
+            </div>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1985</h2>
-        <img id="1985" src="../img/1985.jpg" alt="" class="foto 1985" />
-        </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Consagración nacional En el verano del "85, Soda Stereo realiza su
+      </div>
+      <h2>1985</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/1985.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">Consagración nacional En el verano del "85, Soda Stereo realiza su
               primera gira con 14 fechas, participa en el Festival Chateau Rock ante 15
               mil personas, y en junio vuelve a tocar en Capital, llenando cinco Astros
               en tres días, con otra escenografía inolvidable. También da una actuación
@@ -152,14 +172,18 @@
               “Cuando pase el temblor” y el que da título a la placa.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1986</h2>
-        <img id="1986" src="../img/1986.jpg" alt="" class="foto 1986" />
         </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Giras internacionales En el verano de 1986, Soda vuelve a recorrer
+      </div>
+  <h2>1986</h2>
+  <div class="card mb-3 " style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="../img/1986.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          
+          <p class="card-text">Giras internacionales En el verano de 1986, Soda vuelve a recorrer
               la Costa Atlántica y toca en festivales como La Falda y Chateau Rock, ya
               como número central. La presentación del álbum es en cuatro fechas
               agotadas en el emblemático estadio Obras, ante un total de 22 mil
@@ -176,14 +200,18 @@
               de las revistas de rock.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1987</h2>
-        <img id="1987" src="../img/1987.jpg" alt="" class="foto 1987" />
-        </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Sodamanía 1987 arranca con más shows en Argentina y dos conciertos
+    </div>
+  </div>
+  <h2>1987</h2>
+  <div class="card mb-3 " style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="../img/1987.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          
+          <p class="card-text">Sodamanía 1987 arranca con más shows en Argentina y dos conciertos
               en el muy influyente Festival Internacional de la Canción de Viña del Mar,
               el 11 y 12 de febrero, donde se agotan las 15 mil localidades y es el
               preludio a una exitosa gira por el interior de Chile, en canchas de fútbol
@@ -198,14 +226,18 @@
               nunca en un disco.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1988</h2>
-        <img id="1988" src="../img/1988.jpg" alt="" class="foto 1988" />
+    </div>
+  </div>
+     <h2>1988</h2>
+     <div class="card mb-3 " style="max-width: 100%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="../img/1988.jpg" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Nuevos desafíos A principios de 1988, el grupo se pone a trabajar
+        <div class="col-md-8">
+          <div class="card-body">
+            
+            <p class="card-text">Nuevos desafíos A principios de 1988, el grupo se pone a trabajar
               en un nuevo disco y decide encarar una grabación con el mejor sonido
               internacional. En junio viajan a Nueva York para hacer “Doble vida” con
               producción artística de Carlos Alomar, un famoso guitarrista que trabajó
@@ -225,14 +257,18 @@
               la ancha Avenida 9 de Julio.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1989</h2>
-        <img id="1989" src="../img/1989.jpg" alt="" class="foto 1989" />
-        </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>A toda gloria A esta altura de la carrera de Soda Stereo, el nuevo
+      </div>
+     </div>
+      <h2>1989</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/1989.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">A toda gloria A esta altura de la carrera de Soda Stereo, el nuevo
               hito es un impresionante periplo de 71 días por toda Argentina, sumando
               270 mil espectadores en 30 conciertos. También arman su propia productora,
               Triple Producciones, y encaran la filmación en 16 mm. de un costoso,
@@ -247,16 +283,19 @@
               y tres remezclas de material de “Doble vida”.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1990</h2>
-        <section>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/T_FkEw27XJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </section>
         </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Canción y gira animal A comienzos de 1990, Soda cierra las
+      </div>
+      <h2>1990</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/T_FkEw27XJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">Canción y gira animal A comienzos de 1990, Soda cierra las
               presentaciones argentinas de “Doble vida” y el reciente EP, primero en el
               estadio Superdomo de Mar del Plata y luego en el estadio de Vélez en
               Buenos Aires, donde toca el 23 de enero ante 32 mil personas, en una fecha
@@ -275,14 +314,19 @@
               llenar un estadio de fútbol.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1991</h2>
-        <img id="1991" src="../img/1991.jpg" alt="" class="foto 1991" />
-        </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Gran Rex y Av. Nueve de Julio Al comienzo de 1991, Soda Stereo
+          </div>
+      </div>
+      
+      <h2>1991</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/1991.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">Gran Rex y Av. Nueve de Julio Al comienzo de 1991, Soda Stereo
               concluye el tramo local de su gira con un inolvidable concierto en el
               sofisticado balneario uruguayo de Punta del Este, para luego poner rumbo a
               una recorrida internacional que arranca en Venezuela y sigue por México y
@@ -304,14 +348,18 @@
               de veinte cuadras de extensión. Otro hito descomunal e inolvidable.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1992</h2>
-        <img id="1992" src="../img/1992.jpg" alt="" class="foto 1992" />
         </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Parar y renacer Después de tantos años de actividad incesante, en
+      </div>
+      <h2>1992</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/1992.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">Parar y renacer Después de tantos años de actividad incesante, en
               1992 la idea es que cada músico se dedique a proyectos propios, pero el
               receso dura poco porque en mayo se concreta la posibilidad de una muy
               deseada gira por España. Tocan en Barcelona, Valencia, Sevilla y Madrid.
@@ -330,14 +378,18 @@
               Menta y Resonantes.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1993</h2>
-        <img id="1993" src="../img/1993.jpg" alt="" class="foto 1993" />
         </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Proyectos solistas La gira de “Dynamo” se desarrolla por Paraguay,
+      </div>
+      <h2>1993</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/1993.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">Proyectos solistas La gira de “Dynamo” se desarrolla por Paraguay,
               Chile, Venezuela y una recorrida de 45 días en México los tiene ocupados
               hasta marzo. En ese momento, después de pasar una década tocando casi sin
               cesar, Soda Stereo decide parar por un tiempo. Gustavo Cerati graba su
@@ -355,14 +407,18 @@
               pase el temblor” y rarezas de diferentes épocas de la carrera del trío.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1994</h2>
-        <img id="1994" src="../img/1995.jpg" alt="" class="foto 1994" />
         </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Rumbo al regreso La vuelta de Soda, a casi dos años después del
+      </div>
+      <h2>1994</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/1995.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">Rumbo al regreso La vuelta de Soda, a casi dos años después del
               final de la gira de “Dynamo”, comienza a tomar forma con largas zapadas
               realizadas en los estudios Supersónico. En el medio de la preproducción
               ocurre un hecho trágico: el hijo menor de Zeta muere en un accidente
@@ -371,12 +427,14 @@
               actividad del grupo se pone en pausa.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1995</h2>
-         <section>
-          <iframe
-              width="560"
+        </div>
+      </div>
+      <h2>1995</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <iframe
+              width="100%"
               height="315"
               src="https://www.youtube.com/embed/1zzzby2tAQM"
               title="YouTube video player"
@@ -384,11 +442,12 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-          </section>
-        </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Una vuelta de lujo Las sesiones en Supersónico se retoman en enero
+            
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">Una vuelta de lujo Las sesiones en Supersónico se retoman en enero
               de 1995, el trío decide que hay suficiente material para encarar un
               regreso y las canciones nuevas desembocan en “Sueño stereo”, el primer
               trabajo de un flamante contrato con otra importante compañía discográfica.
@@ -405,14 +464,18 @@
               la plaza Moreno de la ciudad de La Plata, ante unas 250 mil personas.</p> 
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1996</h2>
-        <img id="1996" src="../img/1996.jpg" alt="" class="foto 1996" />
         </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Nueva gloria internacional El año "96 arranca con planes ambiciosos
+      </div>
+      <h2>1996</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/1996.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">Nueva gloria internacional El año "96 arranca con planes ambiciosos
               como una gira por Honduras, Panamá, Costa Rica, México Guatemala y Estados
               Unidos, con lleno total en el Olympic Auditorium de Los Angeles, el Aragon
               Theater de Chicago, el Palladium de Nueva York y el James Knight
@@ -431,14 +494,18 @@
               futuro del grupo</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>1997</h2>
-        <img id="1997" src="../img/1997.jpg" alt="" class="foto 1997" />
         </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>La despedida En mayo de 1997, en el mejor momento musical y de
+      </div>
+      <h2>1997</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/1997.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">La despedida En mayo de 1997, en el mejor momento musical y de
               éxito de Soda, súbitamente se anuncia la separación y la realización de
               una corta gira de despedida por estadios de México, Venezuela, Chile y
               Argentina, para sorpresa y tristeza de sus fans. El cierre es el 20 de
@@ -446,14 +513,18 @@
               luego publicado en formato de CD y DVD.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>2007</h2>
-        <img id="2007" src="../img/2007.jpg" alt="" class="foto 2007" />
         </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Me Verás Volver Una gran noticia para todos los seguidores de Soda
+      </div>
+      <h2>2007</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/2007.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">Me Verás Volver Una gran noticia para todos los seguidores de Soda
               Stereo es el histórico anuncio del 9 de junio de 2007, cuando un aviso con
               la frase “Me Verás Volver” deja entrever que el famoso trío se va a
               reunir. El plan es tocar en grandes estadios de Argentina, Chile, Ecuador,
@@ -472,14 +543,18 @@
               septiembre de 2014.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>2017</h2>
-        <img id="2017" src="../img/2017.jpg" alt="" class="foto 2017" />
         </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Soda + Cirque Una década después de “Me Verás Volver”, el amor por
+      </div>
+      <h2>2017</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/2017.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">Soda + Cirque Una década después de “Me Verás Volver”, el amor por
               las canciones del conjunto se vuelve a poner de manifiesto con el estreno
               de “Sép7imo día – no descansaré”. Es un espectáculo del célebre Cirque Du
               Soleil que se basa en las composiciones de Soda Stereo, un honor único
@@ -492,14 +567,18 @@
               sumando más de un millón y medio de tickets. Otro hito descomunal.</p>
           </div>
         </div>
-      </section>
-      <section class="us"> 
-        <div><h2>2019</h2>
-        <img id="2019" src="../img/2019.jpg" alt="" class="foto 2019" />
         </div>
-        <div class="us__text">
-          <div class="us__body">
-            <p>Gracias Totales Charly y Zeta deciden dar forma a un nuevo y
+      </div>
+      <h2>2019</h2>
+      <div class="card mb-3 " style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/2019.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">Gracias Totales Charly y Zeta deciden dar forma a un nuevo y
               fascinante proyecto de Soda Stereo. Algo histórico, épico y memorable.
               Para llegar a este nuevo hito fue fundamental la experiencia de trabajar
               juntos en la música de “Sép7imo día”. Fue un proceso largo, duro y
@@ -523,19 +602,23 @@
               acontecimiento. Y una nueva oportunidad para decir “Gracias totales”.</p>
           </div>
         </div>
-      </section>
+        </div>
+      </div>
+      
     </main>
     <!-- FOOTER -->
     <footer class="footer pt-0 bg-yellow">
       <div class="footer-sm text-black">
-       <div class="container">
-         <div class="row py-4 text-center text-black">
-           <div class="col-lg-5 col-md-6 mb-md-0">Página sin fines de lucro ni comerciales</div>
+        <div class="container">
+          <div class="row py-4 text-center text-black">
+            <div class="col-lg-5 col-md-6 mb-md-0">Página sin fines de lucro ni comerciales</div>
             <div class="col-lg-7 col-md-6">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <ul class="footer_list">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li> <a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>

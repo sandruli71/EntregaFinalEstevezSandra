@@ -1,0 +1,36 @@
+.navbar navbar -expand-lg navbar-light bg-component {
+  display: flex;
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  align-items: normal;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: auto;
+  position: relative;
+
+  .nav_list {
+    display: flex;
+    margin: 0;
+    list-style: none;
+
+    .nav_item {
+      margin-left: 3rem;
+
+      .nav_link.active {
+        text-decoration: underline;
+        font-weight: bolder;
+      }
+      .nav_link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+      }
+    }
+  }
+}

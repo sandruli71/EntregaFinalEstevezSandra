@@ -39,32 +39,41 @@
   <!-- Header -->
   <header>
     <!-- NAV BAR -->
-    <div class="container">
-      <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-light bg__component">
+      <div class="container">
+        <div class="row">
         <a href="/" class="logo">
           <img src="../img/logo soda stereo.png" alt="logo de la empresa" />
         </a>
-        <nav class="nav">
-          <ul class="nav_list">
-            <li class="nav_item">
-              <a class="nav_link" href="../index.html">Inicio</a></li>
-            <li class="nav_item">
-              <a class="nav_link" href="integrantes.html">Integrantes</a></li>
-            <li class="nav_item">
-              <a class="nav_link" href="historia.html">Historia</a></li>
-            <li class="nav_item">
-              <a class="nav_link" href="discografia.html">Discografia</a></li>
-            <li class="nav_item">
-              <a class="nav_link" href="galeria.html">Galeria</a></li>
-            <li class="nav_item">
-              <a class="nav_link" href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
+      
+        <button class="navbar-toggler popular__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          
+          <nav class="nav">
+            <ul class="nav_list ">
+                <li class="nav_item ">
+                  <a class="nav_link" href="../index.html">Inicio</a></li>
+                  <li class="nav_item ">
+                    <a class="nav_link" href="integrantes.html">Integrantes</a></li>
+              <li class="nav_item">
+                <a class="nav_link" href="historia.html">Historia</a></li>
+              <li class="nav_item">
+                <a class="nav_link" href="discografia.html">Discografia</a></li>
+              <li class="nav_item">
+                <a class="nav_link active" aria-current="page" href="#">Galeria</a></li>
+                
+              <li class="nav_item">
+                <a class="nav_link" href="contacto.html">Contacto</a></li>
+            </ul> 
+          </nav> 
+        </div>
       </div>
-    </div>
+      </div>
+   </nav>
   </header>  
-  
-        <main>
+  <main>        
     <section id="intro-section">
       <div class="container">
         <div class="row">
@@ -76,80 +85,99 @@
         </div>
       </div>
     </section>
-  <section class="flex-cointained">
-    <article class="card1">
-    <img src="../img/images (1).jpeg" alt="soda comienzos" />
-      </article>
-      <article class="card1">
-    <img src="../img/images (2).jpeg" alt="baterista" /></article>
-    <article class="card1">
-    <img src="../img/images (3).jpeg" alt="soda en blanco y negro" /></article>
-      <section class="flex-cointained">
-        <article class="card1">
-    <img src="../img/images (4).jpeg" alt="mejores epocas" /></article>
-    <article class="card1">
-    <img src="../img/images (5).jpeg" alt="estilo soda" /></article>
-    <article class="card1">
-    <img src="../img/images (6).jpeg" alt="look soda" /></article>
-    <section class="flex-cointained">
-      <article class="card1">
-    <img src="../img/images (7).jpeg" alt="gira" /></article>
-    <article class="card1">
-    <img src="../img/images (8).jpeg" alt="marcando estilo" /></article>
-    <article class="card1">
-    <img src="../img/images (9).jpeg" alt="ensayo" /></article>
-    <section class="flex-cointained">
-     
-    <article class="card1">
-    <img src="../img/images (10).jpeg" alt="edicion fotografica" /></article>
-    <article class="card1">
-    <img src="../img/images (11).jpeg" alt="soda steros" /></article>
-    <article class="card1">
-    <img src="../img/images (12).jpeg" alt="posando" /></article>
-    <section class="flex-cointained">
-      
-    <article class="card1">
-    <img src="../img/images (13).jpeg" alt="edicion fotografica soda" /></article>
-    <article class="card1">
-    <img src="../img/images (14).jpeg" alt="pose reencuentro" /></article>
-    <article class="card1">
-    <img src="../img/images (15).jpeg" alt="estilos soda " /></article>
-    <section class="flex-cointained">
-    <article class="card1">
-    <img src="../img/images (16).jpeg" alt="aquellos raros peinados" /></article>
-    <article class="card1">
-    <img src="../img/images (17).jpeg" alt="al estilo de soda" /></article>
-    <article class="card1">
-    <img src="../img/images (18).jpeg" alt="book fotografico signos" /></article>
-    <section class="flex-cointained">
-    <article class="card1">
-    <img src="../img/images (19).jpeg" alt="marcando su estilo" /></article>
-    <article class="card1">
-    <img src="../img/images (20).jpeg" alt="soda puro" /></article>
-    <article class="card1">
-    <img src="../img/images (21).jpeg" alt="al estilo soda inicios" /></article>
-    <section class="flex-cointained">
-
-    <article class="card1">
-    <img src="../img/images (22).jpeg" alt="una foto mas" /></article>
-    <article class="card1">
-    <img src="../img/images (23).jpeg" alt="esto es soda" /></article>
-    <article class="card1">
-    <img src="../img/images.jpeg" alt="final soda" />
-      </article>
-    </section>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/images (1).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (2).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (3).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (4).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (5).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (7).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (8).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (9).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (10).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (11).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (12).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (13).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (14).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (15).jpeg" class="d-block w-100" alt="...">
+        </div>
+       
+        <div class="carousel-item">
+          <img src="../img/images (17).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (18).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (19).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (20).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (21).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (22).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images (23).jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/images.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     </main>
     <!-- FOOTER -->
     <footer class="footer pt-0 bg-yellow">
       <div class="footer-sm text-black">
-       <div class="container">
-         <div class="row py-4 text-center text-black">
-           <div class="col-lg-5 col-md-6 mb-md-0">Página sin fines de lucro ni comerciales</div>
+        <div class="container">
+          <div class="row py-4 text-center text-black">
+            <div class="col-lg-5 col-md-6 mb-md-0">Página sin fines de lucro ni comerciales</div>
             <div class="col-lg-7 col-md-6">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <ul class="footer_list">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li> <a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
